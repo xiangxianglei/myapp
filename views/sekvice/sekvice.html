@@ -1,0 +1,72 @@
+<ion-view title="页面五">
+    <ion-header-bar class="bar-subheader">
+        <div class="row">
+            <div class="col col-20">
+                <a  ui-sref="home" title="home">首页</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="contact" title="contact">联系我们</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="orders" title="orders">在线订单</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="sekvice" title="sekvice">SEKVICE</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="showcase" title="showcase">作品展示</a>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-ios-compose"></button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        <img src="images/log.png" style="height: 44px;">
+    </ion-nav-title>
+    <ion-content id="cont">
+        <h3>WEDDINGPHOTOGRAPHY<i>时尚态度系列</i></h3>
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+            <ion-slide>
+                <div class="box"><img src="images/sy_01.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_02.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_03.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_04.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_05.jpg"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <h3>SEKVICE<i>服务报价</i></h3>
+        <div class="row" id="all">
+            <div class="col col-50">
+                <img src="images/5999.jpg" ui-sref="details01">
+                <p>网络特惠套餐 5999￥</p>
+            </div>
+            <div class="col col-50">
+                <img src="images/6999.jpg" ui-sref="details02">
+                <p>6999特惠系列 6999￥</p>
+            </div>
+        </div>
+        <div class="row" id="all">
+            <div class="col col-50">
+                <img src="images/7999.jpg" ui-sref="details03">
+                <p>1对1特惠系列 7999￥</p>
+            </div>
+            <div class="col col-50">
+                <img src="images/6999.jpg" ui-sref="details04">
+                <p>尊享皇室套组系列 9999￥</p>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-calm" id="footers">
+        <img src="images/log2.png">
+        <button class="button button-icon ion-chevron-up" ng-click="top()" id="fot_btn"></button>
+    </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,43 @@
+var myapp=angular.module("myapp",["ionic"]);
+myapp.config(function($stateProvider,$urlRouterProvider){
+    //配置的内容，状态名-{url,template,controllter}
+    $stateProvider.state("all_box",{
+        url:"/all_box",
+        templateUrl:"all_box/all_box.html"
+    }).state("contact",{
+        url:"/contact",
+        templateUrl:"views/contact/contact.html",
+        controller:"page2Ctrl"
+    }).state("home",{
+        url:"/home",
+        templateUrl:"views/home/home.html",
+        controller:"page3Ctrl"
+    }).state("orders",{
+        url:"/orders",
+        templateUrl:"views/orders/orders.html",
+        controller:"page4Ctrl"
+    }).state("sekvice",{
+        url:"/sekvice",
+        templateUrl:"views/sekvice/sekvice.html",
+        controller:"page5Ctrl"
+    }).state("showcase",{
+        url:"/showcase",
+        templateUrl:"views/showcase/showcase.html",
+        controller:"page6Ctrl"
+    }).state("details01",{
+        url:"/details01",
+        templateUrl:"views/details/details01.html"
+    }).state("details02",{
+        url:"/details02",
+        templateUrl:"views/details/details02.html"
+    }).state("details03",{
+        url:"/details03",
+        templateUrl:"views/details/details03.html"
+    }).state("details04",{
+        url:"/details04",
+        templateUrl:"views/details/details04.html"
+    });
+    //默认路由
+
+    $urlRouterProvider.otherwise("/all_box")
+});

@@ -1,0 +1,87 @@
+<ion-view title="页面四">
+    <ion-header-bar class="bar-subheader">
+        <div class="row">
+            <div class="col col-20">
+                <a  ui-sref="home" title="home">首页</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="contact" title="contact">联系我们</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="orders" title="orders">ORDERS</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="sekvice" title="sekvice">服务报价</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="showcase" title="showcase">作品展示</a>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-ios-cart"></button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        <img src="images/log.png" style="height: 44px;">
+    </ion-nav-title>
+    <ion-content id="cont">
+        <h3>ORDERS<i>在线订单</i></h3>
+        <p>亲爱的朋友，您可以在网上咨询并进行在线订单，我们的工作人员会及时的与您取得联系
+            如果你有任何疑问，可以通过在线QQ或者电话咨询我们的工作人员</p>
+        <ion-list class="list list-inset">
+            <ion-item class="item item-input">
+                <span class="input-label">姓名：</span>
+                <input type="text" name="username" placeholder="请输入姓名" ng-model="data.text">
+            </ion-item>
+            <ion-item class="item item-input">
+                <span class="input-label">联系电话：</span>
+                <input type="text" name="username" placeholder="请输入联系电话" ng-model="data.number">
+            </ion-item>
+            <ion-item class="item item-input">
+                <span class="input-label">QQ：</span>
+                <input type="text" name="username" placeholder="请输入QQ号码" ng-model="data.a">
+            </ion-item>
+            <ion-item class="item item-input">
+                <span class="input-label">微信：</span>
+                <input type="text" name="username" placeholder="请输入微信号" ng-model="data.b">
+            </ion-item>
+            <ion-item class="item item-input">
+                <span class="input-label">预定时间：</span>
+                <input type="text" name="username" placeholder="如：2016.10.1" ng-model="data.c">
+            </ion-item>
+            <ion-item class="item item-input">
+                <span class="input-label">联系地址：</span>
+                <input type="text" name="username" placeholder="请输入联系地址" ng-model="data.d">
+            </ion-item>
+            <ion-item class="item item-input item-select">
+                <span class="input-label">选择套餐：</span>
+                <select>
+                    <option value="武汉市">订单套餐1</option>
+                    <option value="黄冈市">订单套餐2</option>
+                    <option value="杭州市">订单套餐3</option>
+                    <option value="深圳市">订单套餐4</option>
+                    <option value="台北市">订单套餐5</option>
+                </select>
+            </ion-item>
+            <ion-item class="item item-input item-select">
+                <span class="input-label">婚姻预算：</span>
+                <select>
+                    <option value="武汉市">4000￥-6000￥</option>
+                    <option value="黄冈市">6000￥-8000￥</option>
+                    <option value="杭州市">8000￥-10000￥</option>
+                    <option value="深圳市">10000￥-12000￥</option>
+                    <option value="台北市">12000￥-20000￥</option>
+                </select>
+            </ion-item>
+            <ion-item class="item item-input">
+                <textarea placeholder="备注" rows="5"></textarea>
+            </ion-item>
+            <button class="button button-full button-assertive" ng-disabled="!data.text || !data.number || !data.a || !data.b || !data.c || !data.d"
+                    ng-click="anyfun()">提交订单</button>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="bar-calm" id="footers">
+        <img src="images/log2.png">
+    </ion-footer-bar>
+
+</ion-view>

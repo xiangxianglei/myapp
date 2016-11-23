@@ -1,0 +1,198 @@
+<ion-view title="首页">
+    <ion-header-bar class="bar-subheader">
+        <div class="row">
+            <div class="col col-20">
+                <a  ui-sref="home" title="home">首页</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="contact" title="contact">CONTACT</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="orders" title="orders">在线订单</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="sekvice" title="sekvice">服务报价</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="showcase" title="showcase">作品展示</a>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-ios-chatboxes"></button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        <img src="images/log.png" style="height: 44px;">
+    </ion-nav-title>
+    <ion-tabs class="tabs-calm tabs-icon-top has-subheader" id="tab">
+        <!--tabs-striped显示的下滑线，tabs-top选显卡图标位于页面的位置-->
+        <ion-tab title="CONTACT" icon-on="icon ion-ios-printer" icon-off="icon ion-ios-printer-outline">
+            <ion-view>
+                <ion-content id="cont">
+                    <h3>WEDDINGPHOTOGRAPHY<i>高端定制系列</i></h3>
+                    <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_01.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_02.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_03.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_04.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_05.jpg"></div>
+                        </ion-slide>
+                    </ion-slide-box>
+                    <h3>CONTACT<i> 联系我们</i></h3>
+                    <ion-list id="lit_img">
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/qq.png">
+                            <h2>ID: 多么痛的领悟</h2>
+                            <i>QQ：<a href="javascript: ;"  ng-click="openModal()" title="点击扫码加QQ">784056810</a></i>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/wx.jpg">
+                            <h2>ID: 阳光的浪子彦</h2>
+                            <i>微信：<a href="http://qzone.qq.com/" title="点击扫码加微信">13607254336</a></i>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/dh.jpg">
+                            <h2>ID: 刘祥</h2>
+                            <i>电话：<a href="http://qzone.qq.com/">13607254336</a></i>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+
+        <ion-tab title="ADDRESS" icon-on="icon ion-ios-location" icon-off="icon ion-ios-location-outline">
+            <ion-view>
+                <ion-content id="cont">
+                    <h3>WEDDINGPHOTOGRAPHY<i>高端定制系列</i></h3>
+                    <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_01.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_02.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_03.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_04.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_05.jpg"></div>
+                        </ion-slide>
+                    </ion-slide-box>
+                    <h3>ADDRESS<i> 详细地址</i></h3>
+                    <ion-list id="lit_img">
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/cd.jpg">
+                            <h3>ID: 成都中心</h3>
+                            <p>联系地址：成都市锦江区一环路</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/wh.jpg">
+                            <h3>ID: 武汉中心</h3>
+                            <p>联系地址：武汉东湖高新技术开发区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/sz.jpg">
+                            <h3>ID: 深圳中心</h3>
+                            <p>联系地址：深圳市南山区</p>
+                            <p>电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/gz.jpg">
+                            <h3>ID: 广州中心</h3>
+                            <p>联系地址：广州市天河区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/xm.jpg">
+                            <h3>ID: 厦门中心</h3>
+                            <p>联系地址：厦门市湖里区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/hz.jpg">
+                            <h3>ID: 杭州中心</h3>
+                            <p>联系地址：杭州市天目山路</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/sh.jpg">
+                            <h3>ID: 上海中心</h3>
+                            <p>联系地址：上海市浦东新区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/nj.jpg">
+                            <h3>ID: 南京中心</h3>
+                            <p>联系地址：南京市汉中门</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/bj.jpg">
+                            <h3>ID: 北京中心</h3>
+                            <p>联系地址：北京市海淀区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/xa.jpg">
+                            <h3>ID: 厦门中心</h3>
+                            <p>联系地址：厦门市湖里区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left item-remove-animate">
+                            <img src="images/cq.jpg">
+                            <h3>ID: 重庆中心</h3>
+                            <p>联系地址：重庆市南岸区</p>
+                            <p>咨询电话：<a href="http://qzone.qq.com/">13607254336</a></p>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+
+        <ion-tab title="MAP" icon-on="icon ion-ios-navigate" icon-off="icon ion-ios-navigate-outline">
+            <ion-view>
+                <ion-content id="cont">
+                    <h3>WEDDINGPHOTOGRAPHY<i>高端定制系列</i></h3>
+                    <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_01.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_02.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_03.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_04.jpg"></div>
+                        </ion-slide>
+                        <ion-slide>
+                            <div class="box"><img src="images/sy_05.jpg"></div>
+                        </ion-slide>
+                    </ion-slide-box>
+                    <h3 id="map_h3"><a>MAP详细地图</a></h3>
+                    <ion-scroll direction="xy" style="width:400px; height:250px;">
+                        <div style="width: 885px; height:565px;">
+                                    <img src="images/dt.png">
+                            </div>
+                        </div>
+                    </ion-scroll>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

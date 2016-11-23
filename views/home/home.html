@@ -1,0 +1,85 @@
+
+<ion-view title="页面三" hide-back-button="true">
+    <ion-header-bar class="bar-subheader">
+        <div class="row">
+            <div class="col col-20">
+                <a  ui-sref="home" title="home">HOME</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="contact" title="contact">联系我们</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="orders" title="orders">在线订单</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="sekvice" title="sekvice">服务报价</a>
+            </div>
+            <div class="col col-20">
+                <a  ui-sref="showcase" title="showcase">作品展示</a>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-home" ng-click="toggleRightSideMenu()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear icon ion-navicon" menu-toggle></button>
+    </ion-nav-buttons>
+    <ion-nav-title class="item-input-inset " id="inpt1">
+        <div class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon" ng-click="showAlert()"></i>
+            <input type="search" placeholder="请输入关键字">
+        </div>
+    </ion-nav-title>
+
+    <ion-content id="cont">
+        <h3>WEDDINGPHOTOGRAPHY<i>时尚态度系列</i></h3>
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+            <ion-slide>
+                <div class="box"><img src="images/sy_01.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_02.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_03.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_04.jpg"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/sy_05.jpg"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <h3>LOVESHOW<i>客片大赏</i></h3>
+        <div class="row" id="all">
+            <div class="col col-33"><img src="images/zpL_01.jpg">-清纯-</div>
+            <div class="col col-33"><img src="images/zpL_02.jpg">-神圣-</div>
+            <div class="col col-33"><img src="images/zpL_03.jpg">-浪漫-</div>
+        </div>
+        <div class="row" id="all">
+            <div class="col col-33"><img src="images/zpL_04.jpg">-唯美-</div>
+            <div class="col col-33"><img src="images/zpL_05.jpg">-意境-</div>
+            <div class="col col-33"><img src="images/zpL_06.jpg">-触动-</div>
+        </div>
+        <h3>NEWS &ACTIVITY<i>最新动态</i></h3>
+        <ion-list show-delete="data.showDelete" show-reorder="data.showDeletes">
+            <ion-item ng-repeat="product in products" class="item-thumbnail-left item-remove-animate">
+                <img ng-src="{{product.images}}">
+                <h2>{{product.tite}}</h2>
+                <p>{{product.new}}</p>
+                <!--可选按钮-->
+                <ion-option-button class="button button-assertive" ng-click="edit(product)">标题</ion-option-button>
+                <ion-option-button class="button button-calm" ng-click="share(product)">详情</ion-option-button>
+            </ion-item>
+            <ion-infinite-scroll distance="10%" immediate-check="false" on-infinite="loadMore()">
+
+            </ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="bar-calm" id="footers">
+        <img src="images/log2.png">
+        <button class="button button-icon ion-chevron-up" ng-click="top()" id="fot_btn"></button>
+    </ion-footer-bar>
+
+</ion-view>

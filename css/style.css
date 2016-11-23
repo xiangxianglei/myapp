@@ -1,0 +1,40 @@
+#img img{width: 100%; height: 100%;}
+*{ margin: 0; padding: 0;}
+#btn1{ position: absolute; bottom:15%; left:40%; font-weight: bolder;}
+#aa .bar-calm .bar{ background: #541414; border: none;}
+.box img{ width: 100%;}
+#tab .tabs{ background: #541414;border: none;}
+.row a{ text-decoration: none; line-height: 35px; color:red; font-size: 12px; display: inline-block;}
+hover:a{background-color: #2b542c;}
+.row{ margin-top: -10px;}
+#cont h3{ color: #5a5a5a; text-align: center;font-size: 14px; margin-top: 10px;}
+#cont h3 i{ color: #000000;font-size: 12px;}
+.col{ text-align: center; color:#5a5a5a}
+#all img{width: 100%; height: 100%; display: block;}
+#list_tet p{ font-size: 10px;}
+#footers{background: #541414; border: none;}
+#footers img{height: 100%; margin: 0 auto}
+#inpt1 .item-input-wrapper{ height:30px; margin-top: -4px;}
+#fot_btn{ position: absolute; right: 5px; bottom: 5px;}
+#lit_img h2{ line-height: 35px; color: #666; font-size: 14px; font-weight: bolder;}
+#lit_img a{text-decoration: none;color: red;}
+#cbl_all{ background: url("../images/cbl_bj.jpeg") no-repeat; background-size: cover;}
+.bar.bar-calm{ background: #9b8b67;}
+.bar.bar-calm h1{ font-weight:bolder;}
+#cbl_all .list a{ background: none; color: #603a31;font-weight:bolder}
+#map_h3 a{ background: #383b4a; width: 100%;height: 44px; line-height: 44px; color:white; font-weight: bolder; display: block;}
+#cont p{ font-size: 10px;color: #5a5a5a;text-align: center;}
+#hd_a a{ color: #c8aba4; font-weight: bolder;}
+#hd_a{background: #541414}
+#hd_a button{ color: #ffffff;}
+#hd_a h1{ color: #f7dcd6;}
+#ct_a img{ width: 100%;}
+#ct_a h2{color: #5a5a5a; font-weight: bolder; line-height: 44px; font-size: 18px;}
+#ct_a i{ color: black; font-size: 12px;}
+#ct_a p{ color: black;padding:10px; border: 1px solid #666;display:block; text-align: center;}
+#ct_a button{color: black;padding:10px; border: 1px solid #666;display:block; background: #d9d7ad; text-align: center; text-decoration: none; width: 100%}
+#ct_b p{ font-size: 10px;}
+#ct_b h5{ line-height:30px;}
+#ct_01 h3{ background: #e6d1d1; padding: 10px;}
+#ct_01 h4{ background: #e6d1d1;text-align: center; padding: 10px 0;}
+#xq_fot{ background: #2b542c;}
